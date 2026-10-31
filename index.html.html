@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="自分の活動リズムと行動パターンを知る、約3分の無料セルフチェック。">
+<title>やる気スイッチ診断</title>
+<style>:root{color-scheme:light;--bg:#f7f8f2;--ink:#263d36;--muted:#586b61;--green:#355e47;--line:#dce3d8;--accent:#eceddc}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.9;letter-spacing:.025em}.site-header{max-width:1120px;margin:auto;padding:25px 32px;display:flex;align-items:center;gap:12px;font-size:14px;font-weight:700}.brand-mark{display:grid;place-items:center;background:var(--green);color:white;width:32px;height:32px;border-radius:50%;font-size:22px}.header-note{margin-left:auto;font-size:11px;color:var(--muted);font-weight:400}main{max-width:760px;margin:24px auto 60px;padding:0 24px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(26px,5vw,40px);line-height:1.55;letter-spacing:.04em}h2{font-size:22px;line-height:1.6}h3{font-size:18px;line-height:1.7;margin-bottom:8px}button,a{touch-action:manipulation}button{font:inherit;cursor:pointer;border:0}button:disabled{background:#dce2d9;color:#566359;cursor:not-allowed}.primary{background:var(--green);color:white;border:1px solid var(--green);padding:15px 28px;border-radius:10px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:35px;min-height:56px}.primary:not(:disabled):hover{background:#274b37}.secondary{color:var(--green);border:1px solid #bac9bc;background:transparent;border-radius:10px;padding:13px 20px;min-height:52px}.secondary:hover{background:#e9eee5}:focus-visible{outline:3px solid #b36922;outline-offset:5px}h1:focus{outline:none}.intro{text-align:center}.eyebrow{color:var(--muted);font-size:10px;letter-spacing:.18em;font-weight:700;margin-bottom:18px}.pill{display:inline-block;padding:4px 15px;border-radius:30px;background:#e7ecdf;font-size:12px;margin-bottom:20px}.intro h1{margin-bottom:15px}.subtitle{font-size:15px;color:var(--muted)}.intro-copy{font-size:15px;line-height:2.15;margin:25px 0 30px}.small{font-size:12px;color:var(--muted)}.intro>.small{margin:12px 0 35px}.intro-details{border-top:1px solid var(--line);padding-top:25px;display:grid;grid-template-columns:1fr 1fr;text-align:left;gap:24px;font-size:12px;color:var(--muted)}.intro-details b{color:var(--ink);font-size:14px}.intro-details p{margin:0}.hero-art{width:210px;height:150px;position:relative;margin:16px auto 25px}.sun{position:absolute;width:100px;height:100px;border-radius:50%;background:#e8dca6;top:10px;left:58px}.stem{position:absolute;height:86px;width:3px;background:var(--green);top:60px;left:104px;transform:rotate(7deg)}.leaf{position:absolute;width:53px;height:29px;background:#6e8c62;border-radius:2px 90% 2px 90%}.leaf.left{left:54px;top:76px;transform:rotate(15deg)}.leaf.right{left:105px;top:53px;transform:rotate(-65deg);background:#355e47}.ground{position:absolute;bottom:3px;left:65px;width:84px;height:1px;background:#85937c}footer{max-width:700px;margin:0 auto;padding:25px 24px 40px;text-align:center;font-size:11px;line-height:1.9;color:var(--muted);border-top:1px solid var(--line)}.progress-meta{display:flex;justify-content:space-between;font-size:12px;font-weight:700}progress{width:100%;height:5px;border:0;display:block;margin:14px 0 45px;background:#e1e7dc;border-radius:8px}progress::-webkit-progress-bar{background:#e1e7dc;border-radius:8px}progress::-webkit-progress-value{background:var(--green);border-radius:8px}progress::-moz-progress-bar{background:var(--green)}.question-panel{max-width:640px;margin:35px auto}.question-panel h1{font-size:26px;margin-bottom:15px}fieldset{padding:0;margin:0;border:0;min-width:0}legend{padding:0;width:100%}.question-help{font-size:13px;color:var(--muted);margin-bottom:25px}.options{display:grid;gap:12px}.option{display:flex;gap:15px;align-items:center;position:relative;border:1px solid #cbd6c8;background:#fff;border-radius:12px;padding:17px 18px;font-size:15px;cursor:pointer;min-height:70px}.option input{position:absolute;opacity:0;width:1px;height:1px}.option:has(input:checked){background:#eaf0e3;border-color:var(--green)}.option:has(input:focus-visible){outline:3px solid #b36922;outline-offset:3px}.option-letter{font-size:12px;color:var(--muted);flex-shrink:0}.selection{border:1px solid #869a83;width:18px;height:18px;border-radius:50%;margin-left:auto;flex-shrink:0}.option:has(input:checked) .selection{border:5px solid var(--green);background:white}.navigation{display:flex;justify-content:space-between;gap:12px;margin:30px 0 15px}.centered{text-align:center}.results>h1{font-size:28px;margin-top:5px}.results>.eyebrow,.results>.pill{margin-bottom:15px}.times{color:#7d8b77}.result-intro{font-size:14px;color:var(--muted);margin:25px 0 40px}.result-section{margin:35px 0}.result-section>h2 span{font-size:12px;color:var(--muted);margin-right:8px}.type-card{border:1px solid var(--line);border-radius:12px;padding:24px;background:#fff;margin:12px 0}.type-card p:last-child{font-size:14px;margin-bottom:0}.type-subtitle{color:var(--muted);font-size:12px;margin-bottom:15px}.mix{font-size:12px;color:var(--muted)}.tips{background:#e9eddf;padding:28px;border-radius:14px}.tips>p,.tips article p,.notes>p{font-size:14px}.tips article{border-top:1px solid #cbd5c1;padding-top:20px;margin-top:20px}.tips article p{margin-bottom:0}.note-card{padding:22px 0;border-bottom:1px solid var(--line)}.note-card h3{margin:8px 0}.note-link{color:var(--green);font-weight:700;font-size:14px;text-underline-offset:5px}.preparing{font-size:13px;background:#e9eee4;padding:8px 14px;display:inline-block;border-radius:6px;margin:0}.restart{display:block;margin:40px auto 0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.mobile-break{display:none}@media(max-width:520px){.site-header{padding:20px;font-size:12px}.header-note{display:none}main{padding:0 20px;margin-top:22px}.hero-art{margin-top:5px}.intro-copy{font-size:14px}.intro-details{gap:14px;font-size:11px}.intro-details b{font-size:12px}.mobile-break{display:block}.question-panel{margin-top:20px}.question-panel h1{font-size:22px}.option{font-size:14px;padding:15px 12px;gap:10px}.navigation .primary{gap:12px;padding:13px 20px}.navigation .secondary{padding:13px 12px;font-size:13px}.results>h1{font-size:24px}.tips,.type-card{padding:20px}.results h2{font-size:20px}}@media(prefers-reduced-motion:no-preference){.option,button{transition:background-color .15s,border-color .15s}}
+</style>
+
+
+
+</head>
+<body>
+<header class="site-header"><span class="brand-mark" aria-hidden="true">↗</span><span>やる気スイッチ診断</span><span class="header-note">自分のペースを、見つけよう。</span></header>
+<main id="app"></main>
+<footer>あなたの回答はこの端末内でのみ採点され、送信・保存されません。<br>このチェックは回答時点の自己申告に基づく傾向を示すもので、医学的・心理学的な診断ではありません。</footer>
+<noscript>このセルフチェックにはJavaScriptが必要です。ブラウザの設定で有効にしてください。</noscript>
+<script>window.QUESTIONS = [
+  {
+    "title": "予定に追われず自由に過ごせる日、自然と活動的になるのは？",
+    "options": [
+      {
+        "text": "朝から動き始めると調子がいい",
+        "category": "morning"
+      },
+      {
+        "text": "昼頃からエンジンがかかる",
+        "category": "afternoon"
+      },
+      {
+        "text": "夕方から夜にかけて調子が出る",
+        "category": "evening"
+      },
+      {
+        "text": "日によって活動しやすい時間が違う",
+        "category": "variable"
+      }
+    ]
+  },
+  {
+    "title": "集中して考えたり、作業したりするなら？",
+    "options": [
+      {
+        "text": "午後が一番はかどる",
+        "category": "afternoon"
+      },
+      {
+        "text": "夜になると集中しやすい",
+        "category": "evening"
+      },
+      {
+        "text": "午前中が一番頭が働く",
+        "category": "morning"
+      },
+      {
+        "text": "その日の状態によって変わる",
+        "category": "variable"
+      }
+    ]
+  },
+  {
+    "title": "朝起きてから、頭と体が動き始める感覚に近いのは？",
+    "options": [
+      {
+        "text": "起きてすぐ動ける",
+        "category": "morning"
+      },
+      {
+        "text": "少し時間が経つと調子が出る",
+        "category": "afternoon"
+      },
+      {
+        "text": "午前中はゆっくり。午後以降に調子が出る",
+        "category": "evening"
+      },
+      {
+        "text": "起床時間や日によってかなり違う",
+        "category": "variable"
+      }
+    ]
+  },
+  {
+    "title": "夕方以降の自分に近いのは？",
+    "options": [
+      {
+        "text": "夕方になると活動が落ち着いてくる",
+        "category": "morning"
+      },
+      {
+        "text": "夕方から調子が上がってくる",
+        "category": "evening"
+      },
+      {
+        "text": "夕方も比較的安定して活動できる",
+        "category": "afternoon"
+      },
+      {
+        "text": "夕方以降の状態も日によって違う",
+        "category": "variable"
+      }
+    ]
+  },
+  {
+    "title": "やるべきことがあるのに、なかなか取りかかれないときは？",
+    "options": [
+      {
+        "text": "最初の一歩がなかなか踏み出せない",
+        "category": "start"
+      },
+      {
+        "text": "始めても途中で飽きてしまう",
+        "category": "continue"
+      },
+      {
+        "text": "疲れていて取りかかる余力がない",
+        "category": "recovery"
+      },
+      {
+        "text": "何から始めるか決められない",
+        "category": "environment"
+      }
+    ]
+  },
+  {
+    "title": "新しい習慣が続かなくなる理由として、一番近いのは？",
+    "options": [
+      {
+        "text": "最初の勢いがなくなってしまう",
+        "category": "continue"
+      },
+      {
+        "text": "忙しくなると後回しになる",
+        "category": "environment"
+      },
+      {
+        "text": "疲れがたまって余裕がなくなる",
+        "category": "recovery"
+      },
+      {
+        "text": "始めるまでに時間がかかってしまう",
+        "category": "start"
+      }
+    ]
+  },
+  {
+    "title": "作業中に集中が途切れたとき、どうなりやすい？",
+    "options": [
+      {
+        "text": "再び取りかかるきっかけがつかめない",
+        "category": "start"
+      },
+      {
+        "text": "そのまま別のことを始めてしまう",
+        "category": "continue"
+      },
+      {
+        "text": "疲れてしまい、休まないと戻れない",
+        "category": "recovery"
+      },
+      {
+        "text": "何をしていたか分からなくなり、整理が必要になる",
+        "category": "environment"
+      }
+    ]
+  },
+  {
+    "title": "疲れを感じたとき、自分に一番必要なのは？",
+    "options": [
+      {
+        "text": "いったん休んで回復する時間",
+        "category": "recovery"
+      },
+      {
+        "text": "やることを整理して負担を減らすこと",
+        "category": "environment"
+      },
+      {
+        "text": "小さなことから再開するきっかけ",
+        "category": "start"
+      },
+      {
+        "text": "無理なく続けられるペースを取り戻すこと",
+        "category": "continue"
+      }
+    ]
+  },
+  {
+    "title": "目標に向かって行動するとき、最も効果を感じるのは？",
+    "options": [
+      {
+        "text": "誰かと約束したり、期限を決めたりする",
+        "category": "start"
+      },
+      {
+        "text": "毎日少しずつ続けられる仕組みを作る",
+        "category": "continue"
+      },
+      {
+        "text": "休息も含めて無理のない計画を立てる",
+        "category": "recovery"
+      },
+      {
+        "text": "やることを細かく分けて順番を決める",
+        "category": "environment"
+      }
+    ]
+  },
+  {
+    "title": "予定が崩れてしまったとき、自分に近いのは？",
+    "options": [
+      {
+        "text": "予定を組み直せばまた動ける",
+        "category": "environment"
+      },
+      {
+        "text": "一度気持ちが切れると再開しにくい",
+        "category": "start"
+      },
+      {
+        "text": "ペースが乱れて、その後も続きにくくなる",
+        "category": "continue"
+      },
+      {
+        "text": "余裕がなくなり、休みたくなる",
+        "category": "recovery"
+      }
+    ]
+  },
+  {
+    "title": "やる気が出ない日に、あったら助かるものは？",
+    "options": [
+      {
+        "text": "まず休んでいいと思える時間",
+        "category": "recovery"
+      },
+      {
+        "text": "何をすればいいか分かる明確な手順",
+        "category": "environment"
+      },
+      {
+        "text": "とりあえず始めてみる小さなきっかけ",
+        "category": "start"
+      },
+      {
+        "text": "無理なく続けられる目標やペース",
+        "category": "continue"
+      }
+    ]
+  },
+  {
+    "title": "自分が一番苦手だと感じるのは？",
+    "options": [
+      {
+        "text": "物事を始めること",
+        "category": "start"
+      },
+      {
+        "text": "一度始めたことを続けること",
+        "category": "continue"
+      },
+      {
+        "text": "疲れているときに無理なく動くこと",
+        "category": "recovery"
+      },
+      {
+        "text": "優先順位を決めて段取りを組むこと",
+        "category": "environment"
+      }
+    ]
+  }
+];
+</script><script>// 公開済みのnote記事URL（https://note.com/...）を各欄に設定してください。
+// 空欄のままなら「記事は準備中です」と表示します。
+window.NOTE_URLS = {
+  start: '',
+  continue: '',
+  recovery: '',
+  environment: ''
+};
+</script><script>'use strict';
+const rhythms = {
+ morning: ['朝型傾向','朝のスタートタイプ','朝の時間帯に活動しやすい傾向があります。午前中に大切な予定を置く方法を試してみましょう。'],
+ afternoon: ['午後型傾向','午後のエンジンタイプ','昼から午後にかけて調子が出やすい傾向があります。午後に集中したい作業を置く方法を試してみましょう。'],
+ evening: ['夜型傾向','夜の集中タイプ','夕方から夜にかけて活動しやすい傾向があります。睡眠時間を削らない範囲で活かしましょう。'],
+ variable: ['変動型傾向','フレキシブルタイプ','活動しやすい時間帯が日によって変わる傾向があります。その日の状態に合わせて予定を調整してみましょう。']
+};
+const behaviors = {
+ start: ['始動サポート型','最初の一歩がカギ','始めるきっかけがあると動きやすくなる傾向があります。','取り組むことを一つ選び、最初の5分だけ試してみましょう。','なかなか始められない自分を動かす攻略BOOK'],
+ continue: ['継続サポート型','続ける仕組みがカギ','同じペースを保つための工夫が役立つ傾向があります。','週単位で小さな目標を決め、休んだ後の再開ルールも作ってみましょう。','三日坊主を卒業するための継続攻略BOOK'],
+ recovery: ['回復優先型','余力を残すことがカギ','疲れや負担に合わせたペース配分が役立つ傾向があります。','今日の予定を見直し、休憩や余白を一つ確保してみましょう。','頑張りすぎずに動くための回復攻略BOOK'],
+ environment: ['環境サポート型','整えることがカギ','優先順位や手順を明確にすると動きやすくなる傾向があります。','気になる用事を書き出し、今日の最優先を一つ決めてみましょう。','迷わず動ける自分になるための環境攻略BOOK']
+};
+function highestCategories(scores) {
+ return Object.keys(scores).filter(k=>scores[k]===Math.max(...Object.values(scores)));
+}
+function scoreAnswers(answers) {
+ if (answers.length !== 12 || window.QUESTIONS.some((q,i) => !Number.isInteger(answers[i]) || !q.options[answers[i]])) throw new Error('全12問に回答してください。');
+ const rhythm = Object.fromEntries(Object.keys(rhythms).map(k=>[k,0]));
+ const behavior = Object.fromEntries(Object.keys(behaviors).map(k=>[k,0]));
+ answers.forEach((answer,i)=>{ (i<4 ? rhythm : behavior)[window.QUESTIONS[i].options[answer].category]++; });
+ return {rhythm,behavior,rhythmTypes:highestCategories(rhythm),behaviorTypes:highestCategories(behavior)};
+}
+function noteURL(category) {
+ try { const u = new URL(window.NOTE_URLS[category]); return u.protocol==='https:' && u.hostname==='note.com' && !u.username && !u.password ? u.href : ''; } catch { return ''; }
+}
+const app = document.getElementById('app');
+let answers = Array(12).fill(null), current = 0;
+const escapeHTML = value => String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function focusHeading() { app.querySelector('h1').focus(); window.scrollTo(0,0); }
+function intro(moveFocus=false) {
+ app.innerHTML = `<section class="intro"><p class="eyebrow">A LITTLE CHECK-IN WITH YOURSELF</p><div class="hero-art" aria-hidden="true"><span class="sun"></span><span class="stem"></span><span class="leaf left"></span><span class="leaf right"></span><span class="ground"></span></div><p class="pill">12の質問で見つける、あなたのヒント</p><h1 tabindex="-1">やる気スイッチ診断</h1><p class="subtitle">自分の活動リズムと行動パターンを知る、<br>約3分の無料セルフチェック</p><p class="intro-copy">頑張り方は、みんな同じじゃなくていい。<br>今の自分が動きやすくなるヒントを<br class="mobile-break">見つけてみませんか？</p><button class="primary" id="start">無料で診断する <span aria-hidden="true">↗</span></button><p class="small">約3分 ・ 登録不要 ・ 全12問</p><div class="intro-details"><p><b>01　活動リズム</b><br>自分が動きやすい時間帯を知る</p><p><b>02　行動パターン</b><br>今日から試せる工夫を見つける</p></div></section>`;
+ document.getElementById('start').onclick=()=>{ answers=Array(12).fill(null); current=0; question(); };
+ if(moveFocus) focusHeading();
+}
+function question() {
+ const q=window.QUESTIONS[current];
+ app.innerHTML=`<section class="question-panel"><div class="progress-meta"><span>${current<4?'01　活動リズム':'02　行動パターン'}</span><span>${current+1} / 12</span></div><progress max="12" value="${current+1}" aria-label="質問の進捗"></progress><p class="eyebrow">QUESTION ${String(current+1).padStart(2,'0')}</p><form><fieldset><legend><h1 tabindex="-1">${escapeHTML(q.title)}</h1></legend><p class="question-help">今の自分に、いちばん近いものを一つ。</p><div class="options">${q.options.map((o,i)=>`<label class="option"><input type="radio" name="answer" value="${i}" ${answers[current]===i?'checked':''} required><span class="option-letter" aria-hidden="true">${'ABCD'[i]}</span><span>${escapeHTML(o.text)}</span><span class="selection" aria-hidden="true"></span></label>`).join('')}</div></fieldset><div class="navigation"><button type="button" class="secondary" id="back">← ${current===0?'はじめに戻る':'前の質問'}</button><button type="submit" class="primary" id="next" ${answers[current]===null?'disabled':''}>${current===11?'結果を見る':'次へ'} <span aria-hidden="true">→</span></button></div></form><p class="small centered">戻って回答を変更できます。</p></section>`;
+ app.querySelectorAll('input').forEach(input=>input.onchange=()=>{ answers[current]=Number(input.value); document.getElementById('next').disabled=false; });
+ document.getElementById('back').onclick=()=>{if(current===0) intro(true);else {current--;question();}};
+ app.querySelector('form').onsubmit=e=>{ e.preventDefault(); if(answers[current]===null)return; if(current===11) results();else {current++; question();} };
+ focusHeading();
+}
+// Only adjacent two-time combinations use a range; larger mixes list every type.
+function rhythmTitle(keys) {
+ const names = {morning:'朝型', afternoon:'午後型', evening:'夜型', variable:'変動型'};
+ if (keys.length === 2) {
+  if (keys.includes('morning') && keys.includes('afternoon')) return '朝〜午後型';
+  if (keys.includes('afternoon') && keys.includes('evening')) return '午後〜夜型';
+ }
+ return keys.map(k=>names[k]).join('＋');
+}
+function behaviorTitle(keys) {
+ return keys.map(k=>behaviors[k][0]).join('＋');
+}
+function results() {
+ const r=scoreAnswers(answers);
+ const cards=(keys,data)=>keys.map(k=>`<article class="type-card"><h3>${data[k][0]}</h3><p class="type-subtitle">${data[k][1]}</p><p>${data[k][2]}</p></article>`).join('');
+ app.innerHTML=`<section class="results"><p class="eyebrow">YOUR CHECK-IN RESULT</p><p class="pill">今のあなたの傾向</p><h1 tabindex="-1">${rhythmTitle(r.rhythmTypes)}<span class="times"> × </span>${behaviorTitle(r.behaviorTypes)}</h1><p class="result-intro">自分を決めつけるためではなく、<br>動きやすくなるヒントとして受け取ってください。</p><section class="result-section"><h2><span>01</span> 活動リズム</h2>${r.rhythmTypes.length>1?'<p class="mix">ミックス傾向：最高点が同じタイプをすべて表示しています。</p>':''}${cards(r.rhythmTypes,rhythms)}</section><section class="result-section"><h2><span>02</span> 行動パターン</h2>${r.behaviorTypes.length>1?'<p class="mix">ミックス傾向：最高点が同じタイプをすべて表示しています。</p>':''}${cards(r.behaviorTypes,behaviors)}</section><section class="tips result-section"><p class="eyebrow">ONE SMALL STEP</p><h2>今日の攻略ヒント</h2><p>気になるものを一つ試してみてください。</p>${r.behaviorTypes.map(k=>`<article><h3>${behaviors[k][0]}</h3><p>${behaviors[k][3]}</p></article>`).join('')}</section><section class="result-section notes"><p class="eyebrow">もっと工夫を知りたい方へ</p><h2>あなたのペースで、もう一歩。</h2><p>有料noteの攻略BOOKで、日々の工夫を詳しく紹介します。</p>${r.behaviorTypes.length===2?'<p>両方購入する必要はありません。</p>':r.behaviorTypes.length>2?'<p>今いちばん気になるテーマから選べます。</p>':''}${r.behaviorTypes.map(k=>`<article class="note-card"><span class="small">${behaviors[k][0]} / 有料note</span><h3>${behaviors[k][4]}</h3><p class="small">300円予定</p>${noteURL(k)?`<a class="note-link" href="${escapeHTML(noteURL(k))}" target="_blank" rel="noopener noreferrer">noteで記事を見る ↗<span class="sr-only">（新しいタブで開きます）</span></a>`:'<p class="preparing">記事は準備中です</p>'}</article>`).join('')}</section><button id="restart" class="secondary restart">もう一度診断する ↻</button></section>`;
+ document.getElementById('restart').onclick=()=>{answers=Array(12).fill(null);current=0;intro(true);};
+ focusHeading();
+}
+intro();
+</script></body>
+</html>
